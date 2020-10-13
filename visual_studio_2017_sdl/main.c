@@ -57,7 +57,7 @@ int main(int argc, char** argv)
      * item.
      */
 
-    lv_demo_widgets();
+    //lv_demo_widgets();
     //lv_demo_benchmark();
     //lv_demo_keypad_encoder();
     //lv_demo_printer();
@@ -156,8 +156,8 @@ static void hal_init(void)
 static int tick_thread(void *data)
 {
     while (1) {
-        lv_tick_inc(5);
-        SDL_Delay(5);   /*Sleep for 1 millisecond*/
+        lv_tick_inc(4);
+        SDL_Delay(1);   /*Sleep for 1 millisecond*/
     }
 
     return 0;
